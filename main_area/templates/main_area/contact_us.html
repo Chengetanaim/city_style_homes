@@ -1,0 +1,87 @@
+{% extends 'main_area/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}Contact Us{% endblock title %}
+</head>
+<body>
+    {% block content %}
+        <section class="top-container top-container-contact">
+            <div class="top-container-info">
+                <h3>Contact Us</h3>
+                <h1>Get In Touch With Us.</h1>
+                <p>We are a commercial and residential real estate property<br>management and maintenance company.</p>
+            </div>
+
+        </section>
+
+        <section class="business-info">
+            <div class="business-info-alpha">
+
+            <div class="contact-info">
+                <h2 style="font-size: 2.5rem; color: var(--color);">We Are Here To Help</h2>
+                <p>Contact us on the following platforms and we will be happy to assist you!</p>
+            </div>
+
+            <div class="contact-det">
+                <div class="contact-det-alpha">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3>21 Avenue Road, Westlea Harare</h3>
+                </div>
+
+                <div class="contact-det-alpha">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>+263 775 768 908</h3>
+                    <h3>+263 718 747 228</h3>
+                </div>
+
+                <div class="contact-det-alpha">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>CityStyleHomes@gmail.com</h3>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="business-location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d474.91598748004867!2d31.06470536124701!3d-17.776280109229102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931af2d92630ac7%3A0xdd60af8354f51551!2sGroombridge%20Shopping%20Mall!5e0!3m2!1sen!2szw!4v1667657228436!5m2!1sen!2szw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    <form method="post">
+        {% csrf_token %}
+
+        
+        <section class="banner banner-alpha">
+
+            <div class="banner-info">
+                <h1>Send Message</h1>
+            </div>
+
+            <div class="email-det">
+                <input name="name" type="text" placeholder="Name">
+                <input name="email" type="text" placeholder="Email">
+            </div>
+
+            <div class="email-info">
+                <input name="message" type="text" placeholder="Message">
+            </div>
+            
+            <div class="email-det">
+                <button type="submit" style="font-size: 1.1rem; font-weight:600; letter-spacing:1px;" class="btn">Post</button>
+            </div>
+
+        </section>
+    </form>
+    {% endblock content  %}
+</body>
+</html>

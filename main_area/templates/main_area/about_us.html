@@ -1,0 +1,100 @@
+{% extends 'main_area/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}About Us{% endblock title %}
+</head>
+<body>
+    {% block content %}
+        <section class="top-container top-container-about">
+            <div class="top-container-info">
+                <h3>About Us</h3>
+                <h1>Get To Know Us Better.</h1>
+                <p>We are a commercial and residential real estate property<br>management and maintenance company.</p>
+            </div>
+
+        </section>
+
+        <section class="AboutUs AboutUs-beta">
+            <div class="about-info">
+                <h2>What Drives Us?</h2>
+                <p>Our mission is to make sure that both the landlord and the tenant are happy. We work together to make sure your home is well maintained and managed inorder to maintain its value.</p>
+            </div>
+
+            <div class="about-image">
+                <img src="{% static '/images/austin-distel-goFBjlQiZFU-unsplash.jpg' %}" alt="">
+            </div>
+        </section>
+
+
+        <div class="topic">
+            <h1>What We Offer</h1>
+        </div>
+
+        <section class="Services Services-alpha">
+
+            <div class="service-tool">
+                <img src="{% static '/images/undraw_online_ad_re_ol62.svg' %}" alt="">
+                <h2>Marketing and Advertising</h2>
+                <p>Property marketing of your property is crucial to the success of your investment. With our experienced team, they have the ability to attract high quality tenants.</p>
+            </div>
+
+            <div class="service-tool">
+                <img src="{% static '/images/undraw_connecting_teams_re_hno7.svg' %}" alt="">
+                <h2>Tenant Screening and Placement</h2>
+                <p>Effective tenant screening processes are crucial for the success of your investment. Our tenant selection policy ensures only qualified applicants will see your property.</p>
+            </div>
+
+            <div class="service-tool">
+                <img src="{% static '/images/undraw_transfer_money_re_6o1h.svg' %}" alt="">
+                <h2>Rent Collection</h2>
+                <p>Get your rent on time every month. Our rent collection process makes it easier for the tenants as we would want the process to be smooth and efficient.</p>
+            </div>
+
+            <div class="service-tool">
+                <img src="{% static '/images/undraw_clean_up_re_504g.svg' %}" alt="">
+                <h2>Inspections and Maintenance</h2>
+                <p>Our scheduled property inspections and maintenance keep your investment property in good health. We will help you protect your investment, minimize costs and maximize income.</p>
+            </div>
+
+            <div class="service-tool">
+                <img src="{% static '/images/undraw_election_day_w842.svg' %}" alt="">
+                <h2>Tenant Eviction</h2>
+                <p>Evictions are unpleasant and at times may get messy. We will resort to this method if all protocols have been exhausted in dealing with a difficult tenant.</p>
+            </div>
+
+            <div class="service-tool">
+                <img src="{% static '/images/undraw_receipt_re_fre3.svg' %}" alt="">
+                <h2>Financial Report</h2>
+                <p>We provide you with the tools and resources to remain up to date with your properties. You have 24/7 access to your financial information. This allows you to make informed decisions, plan and prepare.</p>
+            </div>
+
+        </section>
+
+        <section class="AboutUs">
+            <div class="about-image">
+                <img src="{% static '/images/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg' %}" alt="">
+            </div>
+
+            <div class="about-info">
+                <h2>Why Choose Us?</h2>
+                <p>Our agency provides home management and maintenance for people who dont want the hassle of dealing with tenants on day to day basis. We only bring highly valued tenants with the right qualifications on your property.</p>
+            </div>
+        </section>
+
+        <section class="banner">
+
+            <div class="banner-info">
+            <h1>Any Questions</h1>
+            <p>If there is any questions on how what we do or how we operate,<br>then feel free to contact us.</p>
+            <a href="{% url 'contact_us' %}" class="btn">Contact Us</a>
+            </div>
+
+        </section>
+    {% endblock content %}    
+</body>
+</html>
